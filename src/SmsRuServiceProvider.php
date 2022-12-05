@@ -18,7 +18,7 @@ class SmsRuServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->app->singleton(SmsRuApi::class, static function ($app) {
-            return new SmsRuApi($app['config']['sms_ru'], new HttpClient([
+            return new SmsRuApi($app['config']['sms_ru_channel'], new HttpClient([
                 'base_uri' => 'https://sms.ru/',
                 'timeout' => 5,
                 'connect_timeout' => 5,

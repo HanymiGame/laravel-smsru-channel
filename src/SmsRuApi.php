@@ -1,6 +1,6 @@
 <?php
 
-namespace hanymigame\SmsRuSmsRuChannel;
+namespace hanymigame\SmsRuChannel;
 
 use DomainException;
 use Exception;
